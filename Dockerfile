@@ -1,6 +1,7 @@
 #maven镜像FROM于java镜像所以不用引入jdk
 FROM maven:3.3.3
 
+COPY ./ /tmp
 ADD pom.xml /tmp/build/
 RUN cd /tmp/build/src
 #构建应用

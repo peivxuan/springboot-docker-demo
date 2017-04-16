@@ -1,4 +1,4 @@
-FROM maven:3.3.3
+FROM registry-internal.cn-hangzhou.aliyuncs.com/yl/tomcat-maven:tomcat8.0.36-openjdk8-mvn3.3.9
 
 ADD pom.xml /tmp/build/
 RUN cd /tmp/build && mvn -q dependency:resolve

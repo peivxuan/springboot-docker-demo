@@ -1,4 +1,4 @@
-FROM maven:3.3.3
+FROM registry.cn-hangzhou.aliyuncs.com/ludan/java_tomcat_maven
 
 ADD pom.xml /tmp/build/
 RUN cd /tmp/build && mvn -q dependency:resolve
